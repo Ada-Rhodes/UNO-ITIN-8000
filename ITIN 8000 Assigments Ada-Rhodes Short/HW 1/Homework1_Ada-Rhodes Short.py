@@ -37,8 +37,12 @@ if day_number % 2 == 0 or month_number % 2 == 0:
 else:
     day_type = "odd"
 
+# Get the username as an input username
+print("What is your name?")
+username = input()
+
 # print the "Hello..." statement with appropriate variables in place
-print("Hello. Today's Date is", month_name, str(day_number) + suffix, "of", str(year_number) +
+print("Hello", username + ". Today's Date is", month_name, str(day_number) + suffix, "of", str(year_number) +
       ". The product of the month and day is", str(month_number * day_number) + ", which is an", day_type, "number.\n",
       "\nIf you counted the days this month so far you would have ")
 # Create a new line to print to
