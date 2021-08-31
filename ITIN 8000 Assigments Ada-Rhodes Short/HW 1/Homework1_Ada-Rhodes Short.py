@@ -31,7 +31,7 @@ else:
 year_number = today.year
 
 # If the day numbers modulus of 2 is zero (it is even) and define day_type as "even"
-if day_number % 2 == 0:
+if day_number % 2 == 0 or month_number % 2 == 0:
     day_type = "even"
 # else define day_type as "odd"
 else:
