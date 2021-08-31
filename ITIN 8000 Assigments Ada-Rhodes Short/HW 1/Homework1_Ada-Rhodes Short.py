@@ -28,20 +28,33 @@ else:
     suffix = "th"
 
 # Extract the year as a number from todays date
+year_number = today.year
 
 # If the day numbers modulus of 2 is zero (it is even) and define day_type as "even"
+if day_number % 2 == 0:
+    day_type = "even"
 # else define day_type as "odd"
+else:
+    day_type = "odd"
 
 # print the "Hello..." statement with appropriate variables in place
+print("Hello. Today's Date is", month_name, str(day_number) + suffix, "of", str(year_number) +
+      ". The product of the month and day is", str(month_number * day_number) + ", which is an", day_type, "number.\n",
+      "\nIf you counted the days this month so far you would have ")
 # Create a new line to print to
 
 # Print "if you counted..." statement"
 
 # LOOP
 # Define n=1
-# WHILE n>=day_number
-# print n + a new line
-# n=n+1
+n = 1
+# WHILE n<=day_number
+while n <= day_number:
+    # print n + a new line
+    print(n)
+    # n=n+1
+    n = n+1
 # END LOOP
 
 # Print "days"
+print("days.")
