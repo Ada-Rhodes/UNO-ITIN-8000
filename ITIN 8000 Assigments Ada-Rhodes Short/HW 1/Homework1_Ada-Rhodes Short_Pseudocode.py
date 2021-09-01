@@ -37,7 +37,7 @@ else:
     day_type = "odd"
 
 # print the "Hello..." statement with appropriate variables in place
-print("Hello. Today's Date is", month_name, day_number + suffix, "of", year_number +
+print("Hello. Today's date is", month_name, str(day_number) + suffix, "of", str(year_number) +
       ". The product of the month and day is", (today.month * day_number), "which is an", day_type, "number.")
 
 # Create a new line to print to
