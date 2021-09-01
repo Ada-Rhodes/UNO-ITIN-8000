@@ -38,17 +38,22 @@ else:
 
 # print the "Hello..." statement with appropriate variables in place
 print("Hello. Today's date is", month_name, str(day_number) + suffix, "of", str(year_number) +
-      ". The product of the month and day is", (today.month * day_number), "which is an", day_type, "number.")
+      ". The product of the month and day is", today.month * day_number, "which is an", day_type, "number.")
 
 # Create a new line to print to
-
 # Print "if you counted..." statement"
+print("If you counted the days this month so far you would have:")
 
 # LOOP
 # Define n=1
-# WHILE n>=day_number
+n = 1
+# WHILE n<=day_number
+while n <= day_number:
 # print n + a new line
+    print (n)
 # n=n+1
+    n = n + 1
 # END LOOP
 
 # Print "days"
+print("days")
