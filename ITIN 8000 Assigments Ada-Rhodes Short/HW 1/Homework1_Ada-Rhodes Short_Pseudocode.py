@@ -56,4 +56,4 @@ while n <= day_number:
 # END LOOP
 
 # Print "days"
-print("days")
+print("days :0")
