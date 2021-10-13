@@ -1,0 +1,41 @@
+# Create common attributes for our custom buttons
+<CustomButton@Button>:
+    # font size
+    font_size: 32
+    # color, r,g,b,alpha
+    color: 0, 0, 0, 1
+    # button size
+    size: 150, 50
+    # color of the button when not being pressed (white default) (you can also use a .png)
+    background_normal: ''
+    # color when pressed
+    background_color: .88, .88, .88, 1
+    # what percentage of the window is the button
+    size_hint: .25, .20
+
+<FloatLayout>:
+    # Create our custom button
+    CustomButton:
+        text: "Top Left"
+        # place ? ?
+        pos_hint: {"x": 0, "top": 1}
+
+    CustomButton:
+        text: "Top Right"
+        # place ? ?
+        pos_hint: {"right": 1, "top": 1}
+
+    CustomButton:
+        text: "Bottom Left"
+        # place ? ?
+        pos_hint: {"x": 0, "bottom": 0}
+
+    CustomButton:
+        text: "Bottom Right"
+        # place ? ?
+        pos_hint: {"right": 1, "bottom": 0}
+
+    CustomButton:
+        text: "Center"
+        # place ? ?
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
